@@ -1,0 +1,10 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /var/log/server/*.log
+    tags: ["sample-log"]
+
+output.logstash:
+  enabled: true
+  hosts: ["logstash:5044"]
