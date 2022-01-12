@@ -18,7 +18,7 @@ ELK + FileBeat On Docker
     filebeat
     sample_log
 
-## descriptions
+## description
 ---
     . ELK with Filebeat on Docker using Docker Compose
         
