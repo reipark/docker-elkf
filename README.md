@@ -2,7 +2,7 @@
 ELK + FileBeat On Docker
 =============
 
-* base and reference source: <https://github.com/dalgun/docker-elk>
+* base and reference source: <https://github.com/dalgun/docker.git>
 
 ## directories and files
 ---
