@@ -38,6 +38,8 @@ ELK + FileBeat On Docker
 
 ## notice
 ---
-   FileBeat mounts the log file of the host machine inside the FileBeat Docker Container and collects it, but even if the log file of the host machine is changed, the mounted log file inside the container does not change.
-If the file is directly modified with commands such as echo or chmod, this does not happen. Only changes made to the file by a running application are not reflected.
-Someone please fix this...
+    FileBeat mounts the log file of the host machine inside the FileBeat Docker Container and collects it,
+    but even if the log file of the host machine is changed the mounted log file inside the container does not change.
+    If the file is directly modified with commands such as echo or chmod this does not happen.
+    Only changes made to the file by a running application are not reflected.
+    Someone please fix this...
