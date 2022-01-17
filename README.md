@@ -35,6 +35,9 @@ ELK + FileBeat On Docker
 
     docker logs -f {container_name}
         tailing a log to service
+        
+    docker ps -a
+        check the status of the containers.
 
 ## notice
 ---
@@ -46,9 +49,15 @@ ELK + FileBeat On Docker
     
     2021. 01. 17 Update.
     This problem is solved.
-    My environment is MacOS, it was a matter of setting options in Docker On Mac.
+    My environment is MacOS, it was a matter of setting options in Docker On Mac.    
     (Come to think of it, I should have mentioned the environment called MacOS.)
     If you set it like below in Docker On Mac,
     If the host file is changed, you can check that the file in the mounted container is also changed normally.
+    
     Docker on Mac > Preferences > Genetal > Use gRPC FUSE for file sharing (Uncheck to use the legacy osxfs file sharing instead.)
+    
     You must uncheck the above items. (default is checked)
+    
+    I got help here..
+    https://stackoverflow.com/questions/70117645/inotify-on-docker-mounted-volumes-mac-linux
+
